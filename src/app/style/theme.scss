@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: $gray;
+    font-family: 'iranyekan', roboto, Tahoma, sans-serif;
+    direction: rtl;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    font-family: 'iransans-numeral', roboto, Tahoma, sans-serif;
+}
+
+.active {
+    background-color:$warning ;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color:#fff ;
+    
+}

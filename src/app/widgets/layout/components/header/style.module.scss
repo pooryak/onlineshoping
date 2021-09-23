@@ -1,0 +1,57 @@
+@import '../../../../style/variable.scss';
+
+.header {
+    padding: 60px 0;
+    background-color: $white;
+    width: 100%;
+    font-size: 26px;
+    svg {
+        // color: $thirdinary-color;
+        cursor: pointer;
+    }
+    img {
+        // max-width: 62px;
+        max-height: 27px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        font-size: 1.0rem;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+        
+    }
+     > div {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.badge {
+    position: relative;
+    span {
+        position: absolute;
+        bottom: 0;
+        right: -4px;
+        font-size: 10px;
+        background-color: $white;
+        // color: $black;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.icon_active {
+    color: $warning;
+}

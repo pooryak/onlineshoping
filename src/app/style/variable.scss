@@ -1,0 +1,16 @@
+$primary-color: #F4511E;
+$primary-lighter: lighten($primary-color, 25%);
+$secondary-color: #fef9f8;
+$secondary-lighter: lighten($secondary-color, 25%);
+$thirdinary-color: #0d0d0d;
+$thirdinary-lighter: lighten($thirdinary-color, 25%);
+$gray: #f7f7f7;
+$gray-darker: darken($gray, 10%);
+$white: #ffffff;
+$black: #333333;
+$warning: #fb3449;
+$primary-button: #337ab7;
+
+$breakpoint-sm: "(min-width: 576px)";
+$breakpoint-lg: "(min-width: 992)";
+$breakpoint-xl: "(min-width: 1200)";

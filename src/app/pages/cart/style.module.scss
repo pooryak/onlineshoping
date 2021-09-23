@@ -1,0 +1,32 @@
+.cart_container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.box {
+    padding: 8px;
+    max-height: 200px;
+    display: flex;
+    flex: 1;
+}
+
+.box > div {
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: space-between;
+    padding: 20px 10px;
+    background-color: #fff;
+}
+
+.items {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 80%;
+    max-width: 80%;
+}

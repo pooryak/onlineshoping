@@ -1,0 +1,15 @@
+@import '../../style/variable.scss';
+.btn_primary {
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    padding: 8px 32px;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+    background-color: $warning;
+    cursor: pointer;
+}

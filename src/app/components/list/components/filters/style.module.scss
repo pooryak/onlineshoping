@@ -1,0 +1,123 @@
+@import '../../../../style/variable.scss';
+
+.filters {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.switcher {
+    margin-top: 16px;
+    background-color:$white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 32px;
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 21px;
+      }
+      
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        right: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: $primary-color;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px $primary-color;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(-30px);
+        -ms-transform: translateX(-30px);
+        transform: translateX(-30px);
+      }
+      
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      
+      .switch_label {
+        font-size: 0.9rem;
+        margin-right: 4px;
+      }
+}
+.slide_container {
+        // width: 100%;
+        background-color:$white ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 32px; 
+        .slider {
+            -webkit-appearance: none;  
+            appearance: none;
+            width: 100%; 
+            height: 13px; 
+            background: #d3d3d3; 
+            outline: none; 
+            opacity: 0.7; 
+            -webkit-transition: .2s; 
+            transition: opacity .2s;
+            border-radius: 20px;
+          }
+          
+          .slider:hover {
+            opacity: 1; 
+          }
+          
+          
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none; 
+            appearance: none;
+            width: 13px; 
+            height: 13px; 
+            background: #04AA6D;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+          
+          .slider::-moz-range-thumb {
+            width: 13px; 
+            height: 13px; 
+            background: #04AA6D; 
+            cursor: pointer;
+            border-radius: 50%;
+          }
+}
